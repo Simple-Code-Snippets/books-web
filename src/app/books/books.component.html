@@ -1,0 +1,6 @@
+<h3>كتبي</h3>
+<main>
+    <a *ngFor="let book of books | async" routerLink="/{{book._id}}">
+        <img width="100rem" src="{{book.cover}}">
+    </a>
+</main>
